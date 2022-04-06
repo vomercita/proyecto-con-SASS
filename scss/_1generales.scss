@@ -1,0 +1,71 @@
+
+//RESET
+* {padding:0;
+    margin:0;
+}
+
+//VARIABLES
+
+//family
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Fuzzy+Bubbles&family=Grandstander:wght@100&family=Roboto+Mono:wght@300&display=swap');
+
+$fontArchi: 'Architects Daughter', cursive;
+$fontCaveat:'Caveat', cursive; 
+
+//height
+$lineHeightM: 1.6rem;
+$lineHeightL: 1.8rem;
+$lineHeightXl: 2.5rem;
+
+//weight
+$font-weightX: bold;
+$font-weightXl: bolder;
+
+
+//MIXINS
+
+@mixin titulos($font-size, $font-family, $color, $text-align, $text-shadow, $margin) {
+font-size: $font-size;
+font-family: $font-family;
+color: $color;
+text-align: $text-align;
+text-shadow: $text-shadow;
+margin: $margin;}
+
+
+//MAPAS
+
+$fontColors:(
+'verdeClaro': #198754,
+'darkgreen': darkgreen, 
+'rojoOscuro': rgb(157, 11, 11),
+'violeta': #5F1A73, 
+'violetaOscuro': #6d12a1ad,
+'crema':#d2f8d4,
+);
+
+$backColors: (
+'verdeAgua': lightgreen,
+'navBack': linear-gradient(to right,rgba(60, 233, 80, 0.3),rgba(146, 119, 245, 0.3)),
+'dropDownBack':#fff9,
+'mainArtBack': radial-gradient(circle, rgba(111, 193, 231, 0.253) 0%, rgba(195,6,242,0.2049194677871149) 90%),
+'tableBack':#7fbb833a,
+'cardBack':#ee6edd4b,
+'formBack': linear-gradient(to top,rgba(162, 250, 169, 0.226),rgba(60, 233, 80, 0.3)),
+'formButtonsBack':#f0f8d2b4,
+'formCheckBack':#198754,
+'footerBack':linear-gradient(to left,rgba(60, 233, 80, 0.3), 
+rgba(146, 119, 245, 0.3)),
+);
+
+$shadowColors: (
+'verdeTextShadow': 1px 1px 2px rgba(0, 100, 0, 0.507),
+'rojoTextShadow': 1px 1px 1px rgba(157, 11, 11, 0.685),
+'lilaTextShadow': 2px 2px 4px rgb(241, 180, 252),
+'violetaTextShadow': 1px 1px 2px rgba(83, 0, 100, 0.507),
+'verdeBoxShadow':2px 4px 6px 0 darkgreen,
+'fucsiaBoxShadow': 0 0 4rem 0.6rem rgba(177, 63, 148, 0.863),
+'violetaBoxShadow':-4px 4px 10px rgba(146, 119, 245, 0.253),
+'violeta2BoxShadow':4px 4px 15px 1px #601a738f,
+);
+

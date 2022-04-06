@@ -1,0 +1,60 @@
+
+/*MEDIAS*/
+
+@media screen and (max-width: 992px) {
+	.gridGaleria {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(6, auto);
+		grid-template-areas: 
+		"baba guac" "hum hum"
+		"fal las" "pizza pizza"
+		"boc brow" "hel hel";
+	}
+}
+@media screen and (max-width: 767px) {
+	.gridGaleria {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(9, auto);
+		grid-template-areas: "baba" "guac" "hum"
+		"fal" "las" "pizza"
+		"boc" "brow" "hel";
+	}
+}
+@media only screen and (max-width: 550px) {
+	.iframe {width: 250px;}
+	.imgReceta {width: 75%;}
+	.card {width: 75%;}
+	.botonHome {width:100%}
+}
+@media only screen and (max-width: 400px) {
+	.tableFont {font-size: medium;}
+	.veggiecita {font-size: 3rem;}
+	.tituH1 {
+		font-size: 3rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	.tituH2 {font-size: 1.8rem;}
+	.card-text {font-size: 1.4rem;}
+}
+	
+/*HEADER*/
+@keyframes barra {
+	0% {background-image: url(../img/header1_frutasyverduras_index.jpg);}
+	25% {background-image: url(../img/header2_dips.jpg);}
+	50% {background-image: url(../img/header3_salados.jpg);}
+	75% {background-image: url(../img/header4_dulces.jpg);}
+	100% {background-image: url(../img/header6_frutasyverduras_contacto.jpg);}
+}
+.barra {
+	height: 7rem;
+	width: 100%;
+	animation-name: barra;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-duration: 25s;
+	background-size: cover;
+	background-position: center;
+}		
+
+	

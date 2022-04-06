@@ -1,0 +1,64 @@
+
+/*RECETAS*/
+
+.card {
+    background-color: map-get($map: $backColors, $key:'cardBack');
+    color: map-get($map: $fontColors, $key:'violeta');
+    text-align: center;
+    font-size:1.6rem ;
+    font-weight:$font-weightX;    
+    word-wrap: normal;
+    border: none;
+    text-shadow:map-get($map: $shadowColors, $key:'violetaTextShadow') ;
+    box-shadow: map-get($map: $shadowColors, $key:'violeta2BoxShadow');
+    &:hover { 
+        transform: scale(1.1);
+	    transition: transform 4s;
+	    cursor: pointer;
+        box-shadow: map-get($map: $shadowColors, $key:'fucsiaBoxShadow');
+    }
+}
+.imgReceta { 
+    box-shadow: map-get($map: $shadowColors, $key:'violeta2BoxShadow');
+    border-radius: 4px;
+}
+.lineHeight {
+    box-shadow: map-get($map: $shadowColors, $key:'violetaBoxShadow');
+    border-radius: 4px;
+	line-height: $lineHeightXl;
+}	
+img[src="../img/arrow_up.png"]{
+    &:hover {
+        background-color: rgba(199, 252, 217, 0.7);
+        box-shadow: map-get($map: $shadowColors, $key:'fucsiaBoxShadow');
+        border-radius: 15%;
+    }
+}
+    
+/*GALERIA*/
+ 
+.gridGaleria {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: 
+	"baba guac hum" 
+	"fal las pizza"
+	"boc brow hel";
+	justify-items: center;
+	padding: 1rem;
+	grid-row-gap: 2rem;
+}
+
+.gridBaba {grid-area: baba;}
+.gridGuac {grid-area: guac;}
+.gridHum {grid-area: hum;}
+
+.gridFal {grid-area: fal;}
+.gridLas {grid-area: las;}
+.gridPizza {grid-area: pizza;}
+
+.gridBoc {grid-area: boc;}
+.gridBrow {grid-area: brow;}
+.gridHel {grid-area: hel;}
+

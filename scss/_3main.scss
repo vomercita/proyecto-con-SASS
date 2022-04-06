@@ -1,0 +1,93 @@
+
+/*MAIN*/
+
+.generales {
+    font-family: $fontArchi;
+    font-size: 1.4rem;
+    color: map-get($map:$fontColors,$key:'darkgreen');
+    line-height: $lineHeightL;
+    background-image: url(../img/wall.png);
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.tituH1 {@include titulos (
+    4rem, 
+    $fontCaveat, 
+    map-get($map:$fontColors, $key:'violeta'), 
+    center,
+    map-get($map:$shadowColors, $key:'violetaTextShadow'),
+    1.4rem auto)
+}
+.tituH2 {@include titulos (
+    2.2rem, 
+    $fontArchi, 
+    map-get($map:$fontColors,$key:'rojoOscuro'),
+    center, 
+    map-get($map:$shadowColors, $key:'rojoTextShadow'),
+    1rem auto)
+}
+.tituH3 {@include titulos (
+    1.8rem,
+    $fontArchi,
+    map-get($map:$fontColors,$key:'darkgreen'),
+    center,
+    map-get($map:$shadowColors, $key:'verdeTextShadow'),
+    0.8rem auto)
+}
+h5 {@include titulos (
+    5rem,
+    $fontCaveat,
+    map-get($map:$fontColors,$key:'violetaOscuro'),
+    center,
+    map-get($map:$shadowColors, $key:'lilaTextShadow'),
+    0)
+}    
+.veggiecita {@include titulos (
+    5rem,
+    $fontCaveat,
+    map-get($map:$fontColors,$key:'darkgreen'),
+    center,
+    map-get($map:$shadowColors, $key:'verdeTextShadow'),
+    1rem auto)
+}
+.mainA {
+    background: map-get($map: $backColors, $key:'mainArtBack');
+    box-shadow: map-get($map: $shadowColors, $key:'violeta2BoxShadow');
+    border-radius: 4px;
+}
+.mainP {
+    font-size: 1.6rem;
+    color: map-get($map:$fontColors,$key:'violeta');
+    text-align: center;
+    line-height: $lineHeightXl;
+    padding:1.4rem;
+}    
+
+/*TABLA*/
+
+table {
+	background-color: map-get($map:$backColors, $key:'tableBack' );
+	text-align: center;
+    box-shadow: map-get($map: $shadowColors, $key:'violeta2BoxShadow');
+	thead {
+	background: map-get($map:$backColors,$key:'footerBack');
+	color: map-get($map:$fontColors,$key:'darkgreen');
+	border-bottom:rgba(0, 100, 0, 0.425)}
+	tr { 
+        &:hover {
+        background: map-get($map:$backColors,$key:'footerBack');
+        text-shadow: (2px 2px 3px rgb(199, 252, 217));}
+    }
+}  
+table>:not(caption)>*>* {
+	border-color: #2f5f3725;
+	color: map-get($map:$fontColors,$key:'darkgreen');
+}
+
+/*MAP*/
+.figureMap { 
+    @extend .imgReceta;
+    align-self: center;
+}

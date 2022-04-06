@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Fuzzy+Bubbles&family=Grandstander:wght@100&family=Roboto+Mono:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0; }
+
+/*NAV*/
+.fondoNav {
+  background: linear-gradient(to right, rgba(60, 233, 80, 0.3), rgba(146, 119, 245, 0.3)); }
+
+#navFormat li a {
+  color: darkgreen;
+  font-size: 1.6rem; }
+
+nav ul a:hover {
+  font-weight: bolder;
+  text-shadow: 3px 3px 3px #c7fcd9; }
+
+nav .dropdown-menu {
+  background-color: #fff9;
+  padding: 0;
+  border: none; }
+
+nav .dropdown-item {
+  background: linear-gradient(to right, rgba(60, 233, 80, 0.3), rgba(146, 119, 245, 0.3));
+  padding: 1.4rem;
+  font-size: 1.4rem; }
+
+nav .logo {
+  margin: 0.6rem; }
+  nav .logo:hover {
+    filter: drop-shadow(0 0 0.5rem #c7fcd9); }
+
+nav .dropNoColor {
+  background: linear-gradient(to right, rgba(60, 233, 80, 0.3), rgba(146, 119, 245, 0.3)); }
+  nav .dropNoColor:hover {
+    background-color: #fff9; }
+
+/*MAIN*/
+.generales {
+  font-family: "Architects Daughter", cursive;
+  font-size: 1.4rem;
+  color: darkgreen;
+  line-height: 1.8rem;
+  background-image: url(../img/wall.png);
+  background-size: cover;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  overflow-x: hidden; }
+
+.tituH1 {
+  font-size: 4rem;
+  font-family: "Caveat", cursive;
+  color: #5F1A73;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(83, 0, 100, 0.507);
+  margin: 1.4rem auto; }
+
+.tituH2 {
+  font-size: 2.2rem;
+  font-family: "Architects Daughter", cursive;
+  color: #9d0b0b;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(157, 11, 11, 0.685);
+  margin: 1rem auto; }
+
+.tituH3 {
+  font-size: 1.8rem;
+  font-family: "Architects Daughter", cursive;
+  color: darkgreen;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 100, 0, 0.507);
+  margin: 0.8rem auto; }
+
+h5 {
+  font-size: 5rem;
+  font-family: "Caveat", cursive;
+  color: #6d12a1ad;
+  text-align: center;
+  text-shadow: 2px 2px 4px #f1b4fc;
+  margin: 0; }
+
+.veggiecita {
+  font-size: 5rem;
+  font-family: "Caveat", cursive;
+  color: darkgreen;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 100, 0, 0.507);
+  margin: 1rem auto; }
+
+.mainA {
+  background: radial-gradient(circle, rgba(111, 193, 231, 0.253) 0%, rgba(195, 6, 242, 0.204919) 90%);
+  box-shadow: 4px 4px 15px 1px #601a738f;
+  border-radius: 4px; }
+
+.mainP {
+  font-size: 1.6rem;
+  color: #5F1A73;
+  text-align: center;
+  line-height: 2.5rem;
+  padding: 1.4rem; }
+
+/*TABLA*/
+table {
+  background-color: #7fbb833a;
+  text-align: center;
+  box-shadow: 4px 4px 15px 1px #601a738f; }
+  table thead {
+    background: linear-gradient(to left, rgba(60, 233, 80, 0.3), rgba(146, 119, 245, 0.3));
+    color: darkgreen;
+    border-bottom: rgba(0, 100, 0, 0.425); }
+  table tr:hover {
+    background: linear-gradient(to left, rgba(60, 233, 80, 0.3), rgba(146, 119, 245, 0.3));
+    text-shadow: 2px 2px 3px #c7fcd9; }
+
+table > :not(caption) > * > * {
+  border-color: #2f5f3725;
+  color: darkgreen; }
+
+/*MAP*/
+.figureMap {
+  align-self: center; }
+
+/*RECETAS*/
+.card, .botonHome {
+  background-color: #ee6edd4b;
+  color: #5F1A73;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  word-wrap: normal;
+  border: none;
+  text-shadow: 1px 1px 2px rgba(83, 0, 100, 0.507);
+  box-shadow: 4px 4px 15px 1px #601a738f; }
+  .card:hover, .botonHome:hover {
+    transform: scale(1.1);
+    transition: transform 4s;
+    cursor: pointer;
+    box-shadow: 0 0 4rem 0.6rem rgba(177, 63, 148, 0.863); }
+
+.imgReceta, .figureMap {
+  box-shadow: 4px 4px 15px 1px #601a738f;
+  border-radius: 4px; }
+
+.lineHeight {
+  box-shadow: -4px 4px 10px rgba(146, 119, 245, 0.253);
+  border-radius: 4px;
+  line-height: 2.5rem; }
+
+img[src="../img/arrow_up.png"]:hover {
+  background-color: rgba(199, 252, 217, 0.7);
+  box-shadow: 0 0 4rem 0.6rem rgba(177, 63, 148, 0.863);
+  border-radius: 15%; }
+
+/*GALERIA*/
+.gridGaleria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "baba guac hum"  "fal las pizza" "boc brow hel";
+  justify-items: center;
+  padding: 1rem;
+  grid-row-gap: 2rem; }
+
+.gridBaba {
+  grid-area: baba; }
+
+.gridGuac {
+  grid-area: guac; }
+
+.gridHum {
+  grid-area: hum; }
+
+.gridFal {
+  grid-area: fal; }
+
+.gridLas {
+  grid-area: las; }
+
+.gridPizza {
+  grid-area: pizza; }
+
+.gridBoc {
+  grid-area: boc; }
+
+.gridBrow {
+  grid-area: brow; }
+
+.gridHel {
+  grid-area: hel; }
+
+/*FORM*/
+fieldset legend {
+  font-family: "Architects Daughter", cursive;
+  font-weight: bolder;
+  font-size: larger;
+  text-align: center; }
+
+fieldset div label {
+  font-size: 1.2rem;
+  text-align: center; }
+
+input, select, textarea {
+  font-family: "Architects Daughter", cursive;
+  color: darkgreen;
+  font-size: large;
+  text-align: center;
+  border: solid 1px darkgreen;
+  box-shadow: 2px 4px 6px 0 darkgreen; }
+
+.borderBox {
+  background: linear-gradient(to top, rgba(162, 250, 169, 0.226), rgba(60, 233, 80, 0.3));
+  border-radius: 4px; }
+
+.form-control, .form-select {
+  border: #198754;
+  color: #198754;
+  background: #f0f8d2b4;
+  font-size: large; }
+
+.form-check-input:checked {
+  background-color: #198754;
+  border-color: rgba(0, 100, 0, 0.425); }
+
+.botones {
+  font-family: "Architects Daughter", cursive;
+  font-size: large;
+  font-weight: bold;
+  color: darkgreen;
+  text-align: center;
+  box-shadow: 2px 4px 6px 0 darkgreen;
+  background-color: #f0f8d2b4; }
+  .botones:hover {
+    background-color: darkgreen;
+    color: #d2f8d4;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 4s; }
+
+/*FOOTER*/
+footer {
+  background: linear-gradient(to left, rgba(60, 233, 80, 0.3), rgba(146, 119, 245, 0.3)); }
+  footer a img:hover {
+    box-shadow: 0px 0px 5px 10px rgba(199, 252, 217, 0.8);
+    background-color: rgba(199, 252, 217, 0.8);
+    border-radius: 40%; }
+
+.homeVolver {
+  color: #9d0b0b;
+  text-decoration: none;
+  font-size: 1.4rem; }
+  .homeVolver:hover {
+    cursor: pointer;
+    font-weight: bolder;
+    color: darkgreen;
+    box-shadow: 0px 0px 10px 10px #c7fcd9;
+    border-radius: 25%;
+    background-color: #c7fcd9; }
+
+/*ERROR404*/
+.error, .error2 {
+  font-size: 2.5rem;
+  font-family: "Architects Daughter", cursive;
+  color: #5F1A73;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(83, 0, 100, 0.507);
+  margin: 1rem auto; }
+
+.error2 {
+  font-size: 1.8rem; }
+
+.botonHome {
+  border-radius: 1rem;
+  padding: 0.8rem; }
+  .botonHome:hover {
+    box-shadow: 0 0 3rem 1rem rgba(204, 0, 255, 0.7);
+    font-weight: bolder;
+    color: #efcaf7;
+    background-color: rgba(105, 1, 119, 0.856); }
+
+/*MEDIAS*/
+@media screen and (max-width: 992px) {
+  .gridGaleria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "baba guac" "hum hum" "fal las" "pizza pizza" "boc brow" "hel hel"; } }
+
+@media screen and (max-width: 767px) {
+  .gridGaleria {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas: "baba" "guac" "hum" "fal" "las" "pizza" "boc" "brow" "hel"; } }
+
+@media only screen and (max-width: 550px) {
+  .iframe {
+    width: 250px; }
+  .imgReceta, .figureMap {
+    width: 75%; }
+  .card, .botonHome {
+    width: 75%; }
+  .botonHome {
+    width: 100%; } }
+
+@media only screen and (max-width: 400px) {
+  .tableFont {
+    font-size: medium; }
+  .veggiecita {
+    font-size: 3rem; }
+  .tituH1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .tituH2 {
+    font-size: 1.8rem; }
+  .card-text {
+    font-size: 1.4rem; } }
+
+/*HEADER*/
+@keyframes barra {
+  0% {
+    background-image: url(../img/header1_frutasyverduras_index.jpg); }
+  25% {
+    background-image: url(../img/header2_dips.jpg); }
+  50% {
+    background-image: url(../img/header3_salados.jpg); }
+  75% {
+    background-image: url(../img/header4_dulces.jpg); }
+  100% {
+    background-image: url(../img/header6_frutasyverduras_contacto.jpg); } }
+
+.barra {
+  height: 7rem;
+  width: 100%;
+  animation-name: barra;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-duration: 25s;
+  background-size: cover;
+  background-position: center; }

@@ -1,0 +1,40 @@
+
+/*NAV*/
+.fondoNav {
+	background: map-get($map: $backColors, $key:'navBack');
+	}
+#navFormat{
+	 li{ 
+		 a {
+			color: map-get($map:$fontColors,$key:'darkgreen');
+			font-size: 1.6rem;}
+	}
+}
+nav {
+	ul {
+		a {
+		&:hover {
+			font-weight: $font-weightXl;
+			text-shadow: (3px 3px 3px rgb(199, 252, 217));
+		}
+	}
+}
+.dropdown-menu { 
+	background-color: map-get($map: $backColors, $key:'dropDownBack');
+	padding: 0;
+	border: none;
+}
+.dropdown-item {
+	background: map-get($map: $backColors, $key:'navBack');
+	padding: 1.4rem;
+	font-size: 1.4rem;
+}
+.logo {
+	margin:0.6rem;
+	&:hover { filter: drop-shadow(0 0 0.5rem rgb(199, 252, 217))}
+}
+.dropNoColor {
+	background: map-get($map: $backColors, $key:'navBack');
+	&:hover {background-color: map-get($map: $backColors, $key:'dropDownBack');}
+	}
+}

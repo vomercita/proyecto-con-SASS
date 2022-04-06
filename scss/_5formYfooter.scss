@@ -1,0 +1,109 @@
+
+/*FORM*/
+
+fieldset {
+	legend {
+	font-family: $fontArchi; 
+	font-weight: $font-weightXl;
+	font-size: larger;
+	text-align: center;} 
+}
+fieldset {
+	div {
+		label {
+	font-size: 1.2rem;
+	text-align: center;}
+	}
+}
+input, select, textarea {
+	font-family: $fontArchi;
+	color: map-get($map:$fontColors,$key:'darkgreen');
+	font-size: large;
+	text-align: center;
+	border: solid 1px darkgreen;
+	box-shadow: map-get($map: $shadowColors, $key: 'verdeBoxShadow');
+}
+.borderBox {
+	background: map-get($map: $backColors, $key:'formBack');
+	border-radius: 4px;
+}
+.form-control, .form-select {
+	border: map-get($map: $backColors, $key:'formCheckBack');
+	color: map-get($map: $backColors, $key:'formCheckBack');
+	background: map-get($map: $backColors, $key:'formButtonsBack');
+	font-size: large;
+	}
+.form-check-input:checked {
+	background-color: map-get($map: $backColors, $key:'formCheckBack');
+	border-color: rgba(0, 100, 0, 0.425)
+}
+.botones {
+	font-family: $fontArchi;
+	font-size: large;
+	font-weight: $font-weightX;
+	color: map-get($map:$fontColors,$key:'darkgreen');
+	text-align: center;
+	box-shadow: map-get($map: $shadowColors, $key: 'verdeBoxShadow');
+	background-color: map-get($map: $backColors, $key:'formButtonsBack');
+ 	&:hover {
+		background-color: map-get($map:$fontColors,$key:'darkgreen');
+		color:map-get($map:$fontColors,$key:'crema');
+		cursor: pointer;
+		transform: scale(1.2);
+		transition: transform 4s;
+	}
+}
+
+/*FOOTER*/
+
+footer {
+	background: map-get($map: $backColors, $key:'footerBack');
+	a{	
+		img{ 
+		&:hover {
+			box-shadow: (0px 0px 5px 10px rgba(199, 252, 217, 0.8));
+			background-color: rgba(199, 252, 217, 0.8);
+			border-radius: 40%;}
+		}
+	}
+}	
+.homeVolver {	
+	color: map-get($map: $fontColors, $key:'rojoOscuro');
+	text-decoration: none;
+	font-size: 1.4rem;
+	&:hover {
+		cursor: pointer;
+		font-weight: $font-weightXl;
+		color: map-get($map:$fontColors,$key:'darkgreen');
+		box-shadow: (0px 0px 10px 10px rgb(199, 252, 217));
+		border-radius: 25%;
+		background-color: rgb(199, 252, 217);
+	}
+}
+
+/*ERROR404*/
+
+.error {
+	@include titulos (
+    2.5rem, 
+    $fontArchi, 
+    map-get($map:$fontColors, $key:'violeta'), 
+    center,
+    map-get($map:$shadowColors, $key:'violetaTextShadow'),
+    1rem auto);
+}
+.error2 {
+	@extend .error;
+	font-size: 1.8rem
+}
+.botonHome {
+	@extend .card;
+	border-radius: 1rem;
+	padding: 0.8rem;
+	&:hover {
+		box-shadow: 0 0 3rem 1rem rgba(204, 0, 255, 0.7);
+		font-weight: $font-weightXl;
+		color:rgb(239, 202, 247);
+		background-color: rgba(105, 1, 119, 0.856);
+	}
+}
