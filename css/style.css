@@ -110,7 +110,7 @@ table {
     border-bottom: rgba(0, 100, 0, 0.425); }
   table tr:hover {
     background: linear-gradient(to left, rgba(60, 233, 80, 0.3), rgba(146, 119, 245, 0.3));
-    text-shadow: 2px 2px 3px #c7fcd9; }
+    text-shadow: 3px 2px 3px #c7fcd9; }
 
 table > :not(caption) > * > * {
   border-color: #2f5f3725;

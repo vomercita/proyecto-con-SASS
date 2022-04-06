@@ -78,7 +78,7 @@ table {
 	tr { 
         &:hover {
         background: map-get($map:$backColors,$key:'footerBack');
-        text-shadow: (2px 2px 3px rgb(199, 252, 217));}
+        text-shadow: (3px 2px 3px rgb(199, 252, 217));}
     }
 }  
 table>:not(caption)>*>* {
