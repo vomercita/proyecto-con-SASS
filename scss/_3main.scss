@@ -50,12 +50,13 @@ h5 {@include titulos (
     map-get($map:$fontColors,$key:'darkgreen'),
     center,
     map-get($map:$shadowColors, $key:'verdeTextShadow'),
-    1rem auto)
-}
+    0)
+    }
 .mainA {
     background: map-get($map: $backColors, $key:'mainArtBack');
     box-shadow: map-get($map: $shadowColors, $key:'violeta2BoxShadow');
     border-radius: 4px;
+    width: 75%;
 }
 .mainP {
     font-size: 1.6rem;
