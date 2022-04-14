@@ -55,16 +55,20 @@ h5 {@include titulos (
 .mainA {
     background: map-get($map: $backColors, $key:'mainArtBack');
     box-shadow: map-get($map: $shadowColors, $key:'violeta2BoxShadow');
-    border-radius: 4px;
-    width: 75%;
+    border-radius: 0.2rem 0.2rem 0 0;
+    width: 90%;
 }
 .mainP {
     font-size: 1.6rem;
     color: map-get($map:$fontColors,$key:'violeta');
     text-align: center;
     line-height: $lineHeightXl;
-    padding:1.4rem;
+    padding: 1.4rem;
 }    
+.carousel {
+    width: 90%;
+    box-shadow: map-get($map: $shadowColors, $key:'violeta2BoxShadow');
+    }
 
 /*TABLA*/
 
@@ -83,7 +87,7 @@ table {
     }
 }  
 table>:not(caption)>*>* {
-	border-color: #2f5f3725;
+	border-color: rgba(47, 95, 55, 0.145);
 	color: map-get($map:$fontColors,$key:'darkgreen');
 }
 
@@ -91,4 +95,5 @@ table>:not(caption)>*>* {
 .figureMap { 
     @extend .imgReceta;
     align-self: center;
+    margin-top: 1.4rem;
 }

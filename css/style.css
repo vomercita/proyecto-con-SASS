@@ -3,6 +3,29 @@
   padding: 0;
   margin: 0; }
 
+/*HEADER*/
+@keyframes barra {
+  0% {
+    background-image: url(../img/header1_frutasyverduras_index.jpg); }
+  25% {
+    background-image: url(../img/header2_dips.jpg); }
+  50% {
+    background-image: url(../img/header3_salados.jpg); }
+  75% {
+    background-image: url(../img/header4_dulces.jpg); }
+  100% {
+    background-image: url(../img/header6_frutasyverduras_contacto.jpg); } }
+
+.barra {
+  height: 7rem;
+  width: 100%;
+  animation-name: barra;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-duration: 25s;
+  background-size: cover;
+  background-position: center; }
+
 /*NAV*/
 .fondoNav {
   background: linear-gradient(to right, rgba(60, 233, 80, 0.3), rgba(146, 119, 245, 0.3)); }
@@ -90,8 +113,8 @@ h5 {
 .mainA {
   background: radial-gradient(circle, rgba(111, 193, 231, 0.253) 0%, rgba(195, 6, 242, 0.204919) 90%);
   box-shadow: 4px 4px 15px 1px #601a738f;
-  border-radius: 4px;
-  width: 75%; }
+  border-radius: 0.2rem 0.2rem 0 0;
+  width: 90%; }
 
 .mainP {
   font-size: 1.6rem;
@@ -99,6 +122,10 @@ h5 {
   text-align: center;
   line-height: 2.5rem;
   padding: 1.4rem; }
+
+.carousel {
+  width: 90%;
+  box-shadow: 4px 4px 15px 1px #601a738f; }
 
 /*TABLA*/
 table {
@@ -114,12 +141,13 @@ table {
     text-shadow: 3px 2px 3px #c7fcd9; }
 
 table > :not(caption) > * > * {
-  border-color: #2f5f3725;
+  border-color: rgba(47, 95, 55, 0.145);
   color: darkgreen; }
 
 /*MAP*/
 .figureMap {
-  align-self: center; }
+  align-self: center;
+  margin-top: 1.4rem; }
 
 /*RECETAS*/
 .card, .botonHome {
@@ -279,19 +307,21 @@ footer {
     background-color: rgba(105, 1, 119, 0.856); }
 
 /*MEDIAS*/
+@media screen and (max-width: 900px) {
+  .iframe {
+    width: 80%; } }
+
 @media screen and (max-width: 768px) {
   .gridGaleria {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, auto);
     grid-template-areas: "baba guac" "hum hum" "fal las" "pizza pizza" "boc brow" "hel hel"; } }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 575px) {
   .gridGaleria {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, auto);
     grid-template-areas: "baba" "guac" "hum" "fal" "las" "pizza" "boc" "brow" "hel"; }
-  .iframe {
-    width: 250px; }
   .imgReceta, .figureMap {
     width: 75%; }
   .card, .botonHome {
@@ -301,9 +331,13 @@ footer {
   .mainA {
     width: 100%; }
   .mainP {
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+  .carousel {
+    width: 100%; }
+  .iframe {
+    width: 100%; } }
 
-@media only screen and (max-width: 550px) and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
   .tableFont {
     font-size: medium; }
   .veggiecita {
@@ -320,25 +354,25 @@ footer {
     width: 60%;
     justify-items: center; } }
 
-@media only screen and (max-width: 550px) {
-  /*HEADER*/
-  @keyframes barra {
-    0% {
-      background-image: url(../img/header1_frutasyverduras_index.jpg); }
-    25% {
-      background-image: url(../img/header2_dips.jpg); }
-    50% {
-      background-image: url(../img/header3_salados.jpg); }
-    75% {
-      background-image: url(../img/header4_dulces.jpg); }
-    100% {
-      background-image: url(../img/header6_frutasyverduras_contacto.jpg); } }
-  .barra {
-    height: 7rem;
-    width: 100%;
-    animation-name: barra;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-duration: 25s;
-    background-size: cover;
-    background-position: center; } }
+/*HEADER*/
+@keyframes barra {
+  0% {
+    background-image: url(../img/header1_frutasyverduras_index.jpg); }
+  25% {
+    background-image: url(../img/header2_dips.jpg); }
+  50% {
+    background-image: url(../img/header3_salados.jpg); }
+  75% {
+    background-image: url(../img/header4_dulces.jpg); }
+  100% {
+    background-image: url(../img/header6_frutasyverduras_contacto.jpg); } }
+
+.barra {
+  height: 7rem;
+  width: 100%;
+  animation-name: barra;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-duration: 25s;
+  background-size: cover;
+  background-position: center; }

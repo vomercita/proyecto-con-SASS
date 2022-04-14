@@ -69,3 +69,21 @@ $shadowColors: (
 'violeta2BoxShadow':4px 4px 15px 1px #601a738f,
 );
 
+/*HEADER*/
+@keyframes barra {
+	0% {background-image: url(../img/header1_frutasyverduras_index.jpg);}
+	25% {background-image: url(../img/header2_dips.jpg);}
+	50% {background-image: url(../img/header3_salados.jpg);}
+	75% {background-image: url(../img/header4_dulces.jpg);}
+	100% {background-image: url(../img/header6_frutasyverduras_contacto.jpg);}
+}
+.barra {
+	height: 7rem;
+	width: 100%;
+	animation-name: barra;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-duration: 25s;
+	background-size: cover;
+	background-position: center;}
+	

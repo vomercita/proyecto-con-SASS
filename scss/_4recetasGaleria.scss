@@ -26,7 +26,7 @@
     box-shadow: map-get($map: $shadowColors, $key:'violetaBoxShadow');
     border-radius: 4px;
 	line-height: $lineHeightXl;
-}	
+    }	
 img[src="../img/arrow_up.png"]{
     &:hover {
         background-color: rgba(199, 252, 217, 0.7);
